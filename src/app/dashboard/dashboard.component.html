@@ -1,0 +1,19 @@
+<div>
+    <div class="container">
+        <div>
+            <div class="cards">
+                <article *ngFor="let i of [0,1,2,]" class="card">
+                    <span class="icons">
+                        <mat-icon>{{ icons[i] }}</mat-icon>
+                    </span>
+                    <h1>{{ number[i] }}</h1>
+                    <p>{{ text[i] }}</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="c-left">
+            <h2>{{ greetingMessage }}</h2>
+        </div>
+    </div>
+</div>

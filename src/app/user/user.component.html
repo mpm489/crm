@@ -1,0 +1,21 @@
+<div class="user-table">
+  <div class="user-header">
+    <div class="user-cell">First Name</div>
+    <div class="user-cell">Last Name</div>
+    <div class="user-cell">E-mail</div>
+    <div class="user-cell">Birth Date</div>
+    <div class="user-cell">Street</div>
+    <div class="user-cell">City</div>
+  </div>
+  <div *ngFor="let user of users" class="user-row" (click)="showUserDetails(user)">
+    <div class="user-cell"> {{ user.firstName }}</div>
+    <div class="user-cell">{{ user.lastName }}</div>
+    <div class="user-cell">{{ user.email }}</div>
+    <div class="user-cell">{{ user.birthDate | date }}</div>
+    <div class="user-cell">{{ user.street }}</div>
+    <div class="user-cell">{{ user.city }}</div>
+  </div>
+</div>
+<button matTooltip="Add User" [matTooltipPosition]="positionOptions[1]" (click)="openDialog()" mat-fab class="btn">
+  <mat-icon>add</mat-icon>
+</button>

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+$color-primary: #6c63ff;
+$color-success: #00bf8e;
+$color-warning: #f7c94b;
+$color-danger: #f75842;
+$color-danger-variant: rgba(247, 88, 66, 0.4);
+$color-white: #fff;
+$color-light: rgba(255, 255, 255, 0.7);
+$color-black: #000;
+$color-bg: #1f2641;
+$color-bg1: #2e3267;
+$color-bg2: #424890;
+$transition: all 400ms ease;
+
+
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn {
+    text-decoration: none;
+    background: $color-white;
+    border-radius: 4px;
+    color: $color-black;
+    padding: 16px 40px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: $transition;
+
+    &:hover {
+        background: transparent;
+        color: $color-white;
+        border-color: $color-white;
+    }
+}
+
+.btn-primary {
+    background: $color-danger;
+    color: $color-white;
+}

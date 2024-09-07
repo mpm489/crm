@@ -1,0 +1,22 @@
+<section class="courses">
+    <div class="courses-container">
+
+        <article *ngFor="let i of [0,1,2,3,4,5,6,7,8]" class="course">
+
+        <img src="../../assets/img/{{images[i]}}" alt="">
+
+            <div class="course-info">
+                <h4>{{courseService.text[i]}}</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae nostrum at hic numquam nihil?
+                    Maxime, perferendis!
+                </p>
+                <a href="#" class="btn btn-primary">Lern More</a>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
